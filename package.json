@@ -1,0 +1,22 @@
+{
+  "name": "heroku-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezio17/heroku-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ezio17/heroku-api/issues"
+  },
+  "homepage": "https://github.com/Ezio17/heroku-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
