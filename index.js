@@ -2,7 +2,6 @@
 
 let userList = document.getElementById('user-list')
 let form = document.getElementById('form')
-console.log(form)
 
 let usersList = [];
 render()
