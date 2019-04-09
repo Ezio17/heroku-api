@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const port = process.env.PORT || 3000
 
 const app = express();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -14,4 +15,4 @@ app.post("/users", urlencodedParser, function (request, response) {
   response.send(`Name: ${request.body.name}`);
 });
 
-app.listen(3000);
+app.listen(port, () => console.log(`Example app listening on http://127.0.0.1:${port}`))
