@@ -21,7 +21,7 @@ form.onsubmit = (event) => {
 };
 
 function createUser(user) {
-  fetch('http://127.0.0.1:3000/users', {
+  fetch('https://heroku-api-test-shcherba.herokuapp.com/users', {
     method: 'POST',
     body: JSON.stringify(user),
   })
@@ -33,7 +33,7 @@ function createUser(user) {
 }
 
 
-fetch('http://127.0.0.1:3000/users')
+fetch('https://heroku-api-test-shcherba.herokuapp.com/users')
   .then(response => response.json())
   .then(users => {
     usersList = users
