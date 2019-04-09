@@ -1,0 +1,31 @@
+body {
+  background-color: #acb0b7;
+}
+
+.td, .th {
+  border: 2px solid black;
+  text-align: center;
+  background-color: white;
+}
+
+.td {
+  width: 150px;
+}
+
+.users {
+  margin-top: 30px;
+}
+
+.small {
+  color: white;
+}
+
+.button {
+  width: 180px;
+}
+
+.registration {
+  margin-bottom: 40px;
+  margin-top: 30px;
+  color:#5e87c9;
+}
