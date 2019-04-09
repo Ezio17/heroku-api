@@ -1,7 +1,17 @@
-var express = require('express');
-var app = express();
-const port = process.env.PORT || 5000
+const express = require("express");
+const bodyParser = require("body-parser");
 
-app.get('/', (req, res) => res.send('<b>Hello World!</b>'))
+const app = express();
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-app.listen(port, () => console.log(`Example app listening on http://127.0.0.1:${port}`))
+app.get("/", function (request, response) {
+  response.sendFile(__dirname + "/index.html");
+});
+
+app.post("/users", urlencodedParser, function (request, response) {
+  if (!request.body) return response.sendStatus(400);
+  console.log(request.body);
+  response.send(`Name: ${request.body.name}`);
+});
+
+app.listen(3000);
